@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Conducify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hlO-NE-6dW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hlO-NE-6dW" secondAttribute="bottom" id="4Dj-bM-hhE"/>
+                            <constraint firstItem="hlO-NE-6dW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L8P-2r-bk3"/>
+                            <constraint firstItem="hlO-NE-6dW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XLC-59-Vsf"/>
+                            <constraint firstAttribute="trailing" secondItem="hlO-NE-6dW" secondAttribute="trailing" id="lX6-TD-c8q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Z8A-Fb-1PD" kind="showDetail" identifier="loggedInPath" action="showViewController:sender:" id="e8i-Mu-RY3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1759.2" y="1154.5727136431785"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="UKt-Ah-emU">
+            <objects>
+                <viewController id="Una-Ze-RxG" customClass="weatherController" customModule="Conducify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tIh-Qe-gkX"/>
+                        <viewControllerLayoutGuide type="bottom" id="0cB-e3-Z4j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Op1-t9-b47">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kle-Rj-56j">
+                                <rect key="frame" x="66" y="127" width="242" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980392155" green="0.80392156862745101" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Weather" image="iconWeather" selectedImage="iconWeather" id="Fma-Uy-Zab"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVG-Fc-DKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="278"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="PtQ-PK-O2L">
+            <objects>
+                <viewController id="CHk-Tf-Wzd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wQT-2k-LvM"/>
+                        <viewControllerLayoutGuide type="bottom" id="5oy-vz-zvc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xQI-G4-3yb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paw-pu-wrh">
+                                <rect key="frame" x="66" y="147" width="242" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.36078431372549019" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Main" image="iconHome" selectedImage="iconHome" id="Jt3-Fz-wc9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDW-aZ-Ky4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="171"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Osd-oA-Ulc">
+            <objects>
+                <tabBarController id="Z8A-Fb-1PD" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="IPB-kH-Pfn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CHk-Tf-Wzd" kind="relationship" relationship="viewControllers" id="y8q-8p-L8Y"/>
+                        <segue destination="Una-Ze-RxG" kind="relationship" relationship="viewControllers" id="vrz-5t-HKd"/>
+                        <segue destination="7uK-c8-vCV" kind="relationship" relationship="viewControllers" id="oM6-rd-xib"/>
+                        <segue destination="ZQK-0C-J0E" kind="relationship" relationship="viewControllers" id="zVJ-g1-4DL"/>
+                        <segue destination="mwV-DE-UgM" kind="relationship" relationship="viewControllers" id="WiC-Fb-Wzo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhn-yz-c1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-849" y="1156"/>
+        </scene>
+        <!--Maps-->
+        <scene sceneID="q0e-IM-XtB">
+            <objects>
+                <viewController id="7uK-c8-vCV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TAe-EV-HTa"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Ew-Cm-Vsp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DmM-7G-ZgE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google Gmail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rj-rl-DWM">
+                                <rect key="frame" x="65" y="138" width="244" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74901960784313726" green="0.96862745098039216" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Maps" image="iconGMail" selectedImage="iconGMail" id="96U-EZ-G28"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFe-dG-X4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="510"/>
+        </scene>
+        <!--G-Drive-->
+        <scene sceneID="XzG-7h-1rU">
+            <objects>
+                <viewController id="ZQK-0C-J0E" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bHt-bG-sMu"/>
+                        <viewControllerLayoutGuide type="bottom" id="eEm-Vo-Ub8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K0f-cb-4tP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google Drive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb1-YN-jnA">
+                                <rect key="frame" x="66" y="127" width="242" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74901960784313726" green="0.96862745098039216" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="G-Drive" image="iconGDrive" selectedImage="iconGDrive" id="n4e-ez-1tS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBB-a4-NkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="1050"/>
+        </scene>
+        <!--Instagram-->
+        <scene sceneID="AEQ-3C-RnS">
+            <objects>
+                <viewController id="mwV-DE-UgM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="na2-hE-pyV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nw9-im-EGZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S1u-zo-CgP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjd-ft-qHS">
+                                <rect key="frame" x="66" y="148" width="242" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.36078431372549019" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Instagram" image="iconInsta" selectedImage="iconInsta" id="xo6-yG-dcY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pwq-m1-tlN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="1478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconGDrive" width="30" height="30"/>
+        <image name="iconGMail" width="30" height="30"/>
+        <image name="iconHome" width="30" height="30"/>
+        <image name="iconInsta" width="30" height="30"/>
+        <image name="iconWeather" width="30" height="30"/>
+        <image name="loginBackground" width="187" height="333"/>
+    </resources>
+</document>

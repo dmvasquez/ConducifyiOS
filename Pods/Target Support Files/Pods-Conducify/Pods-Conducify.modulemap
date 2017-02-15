@@ -1,0 +1,6 @@
+framework module Pods_Conducify {
+  umbrella header "Pods-Conducify-umbrella.h"
+
+  export *
+  module * { export * }
+}
